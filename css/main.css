@@ -104,6 +104,7 @@ textarea {
 .ma-auto { margin: 0 auto;}
 
 .pl-sm {padding-left: 1.75em;}
+.pr-sm {padding-right: 1.75em;}
 
 /* ===display==== */
 .inlb {display: inline-block; }
@@ -114,15 +115,37 @@ a {
   color: #413a42;
 }
 
-ul { padding: 0;}
+ul { 
+  padding: 0;
+  margin-top: 0;
+}
 
 .no-list-type { list-style-type: none; }
 
 /* ===type==== */
 
+h1, h2, h3 {
+  font-family: "Times New roman", Times, serif;
+  margin-top: 0;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 /* ===size==== */
+.two-thirds, .one-third {
+  float: left;
+  display: inline-block;
+}
+
 .two-thirds {
-  width: 620px;
+  width: 610px;
+}
+
+.one-third {
+  width: 310px
 }
 
 /* ===size==== */
@@ -133,8 +156,30 @@ ul { padding: 0;}
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f9b672', endColorstr='#ffa837')"; /* IE8 */
   background-color: #f9b672;
 }
+
+/* ===clearfix==== */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
 /*  Specific styles
 ========================================================================== */
+
+html, body {
+  width: 100%;
+}
 
 body {
   position: absolute;
@@ -160,6 +205,7 @@ img { width: 550px; }
 }
 
 .container {
+    margin-top: 1.5em;
     width: 960px;
     background: #ededed;
     border-top-left-radius: 5px;
@@ -171,11 +217,10 @@ img { width: 550px; }
 }
 
 .title {
-  margin: 0.3em 0 0em;  
+  margin: 0em;  
   font-size: 4em;
   padding-top: 0.2em;
   color: #dedede;
-  font-family: "Times New roman", Times, serif;
   line-height: 1.2em;
 }
 
@@ -183,7 +228,11 @@ img { width: 550px; }
   margin-top: 0;
   font-weight: 500;
   color: #dedede;
-  font-family: "Times New roman", Times, serif;
+}
+
+.cont-title {
+  color: #413a42;
+  margin-bottom: 0.5em;
 }
 
 nav {
@@ -224,9 +273,33 @@ nav li {
   color: #eeeeee;
 }
 
-footer {
-  height: 40px;
+.phone, .address, .email {
+  padding-bottom: 0.5em;
+}
+/*  Footer
+========================================================================== */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 40px; 
   padding-top: 0.95em;
+}
+
+footer {
+  width: 960px;
+  -moz-box-shadow: 0px 4px 6px 2px #9f9f9f; /* for Firefox 3.5+ */
+  -webkit-box-shadow: 0px 4px 6px 2px #9f9f9f; /* for Safari and Chrome */
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#7f7f7f', Direction=180, Strength=3);
 }
 
 /*-------------> BAROUSEL */
