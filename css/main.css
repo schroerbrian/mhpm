@@ -237,7 +237,7 @@ footer {
     background:url(../images/bg_banner.gif) repeat 0 0;
     width:550px;
     height:367px;
-    border-top:3px solid #000;
+    border-top:3px solid #262626;
 }
 
 .barousel_image
@@ -318,7 +318,7 @@ footer {
     position:absolute;
     padding:3px 3px 0px 0;
     height:23px;    
-    background:#000;
+    background:#262626;
     bottom:0;
     z-index:20;
     width:547px;
@@ -371,16 +371,16 @@ footer {
 
 .barousel_nav li.prev a
 {
-    background-image:url(../images/barousel_link_previous.gif);
+    background-image:url(../img/left.png);
     background-repeat:no-repeat;
-    background-position:0 0;
+    background-position:4px 2px;
 }
 
 .barousel_nav li.next a
 {
-    background-image:url(../images/barousel_link_next.gif);
+    background-image:url(../img/right.png);
     background-repeat:no-repeat;
-    background-position:0 0;
+    background-position:4px 2px;
 }
 
 .barousel img.ajax_loader
