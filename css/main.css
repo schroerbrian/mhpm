@@ -103,6 +103,7 @@ textarea {
 /* ===spacing==== */
 .ma-auto { margin: 0 auto;}
 
+.pl-mi {padding-left: .88em;}
 .pl-sm {padding-left: 1.75em;}
 .pr-sm {padding-right: 1.75em;}
 
@@ -111,7 +112,7 @@ textarea {
 
 /* ===dumb defaults==== */
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #413a42;
 }
 
@@ -247,30 +248,34 @@ nav ul {
 /* #ffa837; */
 
 nav li {
-  padding-top: 0.5em;
+  height: 100%;
+  border-right: solid 1px #5a5a5a;
+  margin-right: -4px;
+}
+
+nav li:hover {
+  background-color: #ffa837; 
+  color: #eeeeee;
+}
+
+nav li:active {
+  background-color: #ffa837; 
+  color: #eeeeee;
 }
 
 .nav a {
-  padding: 0.65em 1.75em;
+  padding: 0em 1.75em;
+  line-height: 40px;
+  display: inline-block;
 }
 
 .nav-left a {
   border-left: 0;
-  margin-left: 1em;
+  margin-left: 0.4em;
 }
 
 .nav-right a {
   border-right: 0;
-}
-
-.nav a:hover {
-  background-color: #ffa837; 
-  color: #eeeeee;
-}
-
-.nav a:active {
-  background-color: #ffa837; 
-  color: #eeeeee;
 }
 
 .phone, .address, .email {
@@ -307,7 +312,6 @@ footer {
 {
     position:relative;
     margin-bottom:0px;
-    background:url(../images/bg_banner.gif) repeat 0 0;
     width:550px;
     height:367px;
     border-top:3px solid #262626;
@@ -347,7 +351,7 @@ footer {
     position:absolute;
     padding:15px 18px 0 18px;    
     z-index:50;
-    background:url(../images/bg_barousel_content.png) repeat 0 0;
+    background:url(../img/bg_barousel_content.png) repeat 0 0;
     color:#fff;
     width:247px;
     bottom:36px;
