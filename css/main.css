@@ -103,6 +103,7 @@ textarea {
 /* ===spacing==== */
 .ma-auto { margin: 0 auto;}
 
+.pl-mc {padding-left: .4em}
 .pl-mi {padding-left: .88em;}
 .pl-sm {padding-left: 1.75em;}
 .pr-sm {padding-right: 1.75em;}
@@ -119,9 +120,8 @@ a {
 ul { 
   padding: 0;
   margin-top: 0;
+  list-style-type: none;
 }
-
-.no-list-type { list-style-type: none; }
 
 /* ===type==== */
 
@@ -237,7 +237,7 @@ img { width: 550px; }
 }
 
 nav {
-  height: 40px;
+  height: 35px;
   zoom: 1;
   margin-bottom: 1em;
 }
@@ -265,7 +265,7 @@ nav li:active {
 
 .nav a {
   padding: 0em 1.75em;
-  line-height: 40px;
+  line-height: 35px;
   display: inline-block;
 }
 
